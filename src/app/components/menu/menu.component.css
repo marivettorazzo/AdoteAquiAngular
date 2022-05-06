@@ -1,0 +1,25 @@
+#section{
+  width: 350px !important;
+}
+.accordion{
+  width: 350px !important;
+  box-shadow: 1px 1px 10px #10101051;
+  border-radius: 8px;
+  outline: transparent;
+}
+.accordion :focus{
+ display: none;
+}
+.accordion-button:not(.collapsed) {
+  color: #67917a;
+  background-color: transparent !important;
+  transition: 1s;
+}
+.contentLogo{
+  width: 350px !important;
+  height: 350px !important;
+}
+img{
+  width: 350px !important;
+  height: 350px !important;
+}
