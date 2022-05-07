@@ -16,8 +16,10 @@
   transition: 1s;
 }
 .contentLogo{
+  background-color: #9e6a90;
   width: 350px !important;
   height: 350px !important;
+
 }
 img{
   width: 350px !important;
