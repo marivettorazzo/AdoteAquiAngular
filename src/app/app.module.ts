@@ -1,3 +1,5 @@
+import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 import { TermoTutelaComponent } from './components/termo-tutela/termo-tutela.component';
 import { SobreAdoteAquiComponent } from './components/sobre-adote-aqui/sobre-adote-aqui.component';
 import { DoacaoComponent } from './components/doacao/doacao.component';
@@ -19,10 +21,12 @@ import { AppComponent } from './app.component';
     GaleriaComponent,
     DoacaoComponent,
     SobreAdoteAquiComponent,
-    TermoTutelaComponent
+    TermoTutelaComponent,
+    HomeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

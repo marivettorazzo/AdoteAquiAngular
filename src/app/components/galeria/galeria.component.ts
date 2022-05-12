@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GaleriaService } from './galeria.service';
 
 @Component({
   selector: 'app-galeria',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GaleriaComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dados: GaleriaService) { }
 
   ngOnInit() {
+
+    this.dados.getDogs()
+
   }
 
 }
