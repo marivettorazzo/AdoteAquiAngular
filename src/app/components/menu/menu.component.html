@@ -1,75 +1,69 @@
-<section id="section">
-
-  <div class="contentLogo">
-    <br>
-    <img src="../../../assets/imagens/logoBranco.svg">
-  </div>
-
-  <div class="accordion accordion-flush" id="accordionFlushExample">
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="teste">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-          Sobre a Adote Aqui
-        </button>
-      </h2>
-      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Teste</div>
+<section>
+  <div id="section">
+    <div>
+      <div class="contentLogo">
+        <br />
+        <img src="../../../assets/imagens/logoBranco.svg" />
       </div>
+      <div class="triangulo"></div>
     </div>
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingTwo">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-          Adoção
+    <div class="outroMenu">
+      <div class="divMenu" (click)="methodEscolha($event, 'home')">
+        <button>
+          Home
+          <img class="img" src="../../../assets/imagens/patinhaMenu.svg" />
         </button>
-      </h2>
-      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">teste2</div>
       </div>
-    </div>
-
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingFor">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-          Doação
+      <div class="divMenu" (click)="methodEscolha($event, 'contato')">
+        <button>
+          Contato
+          <img class="img" src="../../../assets/imagens/patinhaMenu.svg" />
         </button>
-      </h2>
-      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Mensal</div>
-        <div class="accordion-body">Semanal</div>
-        <div class="accordion-body">Avulsa</div>
       </div>
-    </div>
-
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingFor">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFor" aria-expanded="false" aria-controls="flush-collapseFor">
+      <div class="divMenu" (click)="methodEscolha($event, 'doacao')">
+        <button>
+          Doações
+          <img class="img" src="../../../assets/imagens/patinhaMenu.svg" />
+        </button>
+      </div>
+      <div class="divMenu" (click)="methodEscolha($event, 'adocao')">
+        <button>
+          Adote
+          <img class="img" src="../../../assets/imagens/patinhaMenu.svg" />
+        </button>
+      </div>
+      <div class="divMenu" (click)="methodEscolha($event, 'galeria')">
+        <button>
           Galeria
+          <img class="img" src="../../../assets/imagens/patinhaMenu.svg" />
         </button>
-      </h2>
-      <div id="flush-collapseFor" class="accordion-collapse collapse" aria-labelledby="flush-headingFor" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">Cães</div>
-        <div class="accordion-body">Gatos</div>
+      </div>
+      <div class="divMenu" (click)="methodEscolha($event, 'sobreNos')">
+        <button>
+          Sobre nós
+          <img class="img" src="../../../assets/imagens/patinhaMenu.svg" />
+        </button>
       </div>
     </div>
-
-
-    <div class="accordion-item">
-      <h2 class="accordion-header" id="flush-headingFive">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-          Termo de Tutela
-        </button>
-      </h2>
-      <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-        <div class="accordion-body">teste2</div>
-        <div class="accordion-body">teste2</div>
-        <div class="accordion-body">teste2</div>
-      </div>
-    </div>
-
   </div>
+
+  <div *ngIf="escolha == 'home'" #home>
+    <app-home></app-home>
+  </div>
+  <div *ngIf="escolha == 'contato'" #contato>
+    <app-contact-page></app-contact-page>
+  </div>
+  <div *ngIf="escolha == 'doacao'" #doacao>
+    <app-doacao></app-doacao>
+  </div>
+  <div *ngIf="escolha == 'galeria'" #galeria>
+    <app-galeria></app-galeria>
+  </div>
+  <div *ngIf="escolha == 'adocao'" #adocao>
+    <app-adocao></app-adocao>
+  </div>
+  <div *ngIf="escolha == 'sobreNos'" #sobreNos>
+    <app-sobre-adote-aqui></app-sobre-adote-aqui>
+  </div>
+
 </section>
-
-

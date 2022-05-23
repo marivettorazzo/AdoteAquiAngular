@@ -1,27 +1,50 @@
-#section{
-  width: 350px !important;
+#section {
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
 }
-.accordion{
-  width: 350px !important;
-  box-shadow: 1px 1px 10px #10101051;
-  border-radius: 8px;
-  outline: transparent;
-}
-.accordion :focus{
- display: none;
-}
-.accordion-button:not(.collapsed) {
-  color: #67917a;
-  background-color: transparent !important;
-  transition: 1s;
-}
-.contentLogo{
-  background-color: #c51596;
-  width: 350px !important;
-  height: 350px !important;
 
+.contentLogo {
+  background-color: rgba(103, 5, 5, 0.847);
 }
-img{
-  width: 350px !important;
-  height: 350px !important;
+.triangulo {
+  width: 0;
+  height: 0;
+  border-left: 86px solid transparent;
+  border-right: 86px solid transparent;
+  border-top: 30px solid rgba(103, 5, 5, 0.847);
+}
+img {
+  width: 155px;
+  height: 150px;
+}
+.outroMenu{
+ display: flex;
+ flex-direction: row;
+ width: 100%;
+ justify-content: space-around;
+ padding-top: 65px;
+ background: linear-gradient(  #7cc515,#7cc51539,#ffff);
+ height: 190px;
+ border-bottom: 1px, solid, #7cc515;
+ font-size: 22px;
+ color: #325402;
+}
+button{
+  background-color: transparent;
+  border-color: transparent;
+}
+button:hover{
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 35px;
+}
+.divMenu{
+  width:150px;
+  display: flex;
+  align-items: center;
+}
+.img{
+  width: 20px;
+  height: auto;
 }
