@@ -47,23 +47,25 @@
     </div>
   </div>
 
-  <div *ngIf="escolha == 'home'" #home>
-    <app-home></app-home>
-  </div>
-  <div *ngIf="escolha == 'contato'" #contato>
-    <app-contact-page></app-contact-page>
-  </div>
-  <div *ngIf="escolha == 'doacao'" #doacao>
-    <app-doacao></app-doacao>
-  </div>
-  <div *ngIf="escolha == 'galeria'" #galeria>
-    <app-galeria></app-galeria>
-  </div>
-  <div *ngIf="escolha == 'adocao'" #adocao>
-    <app-adocao></app-adocao>
-  </div>
-  <div *ngIf="escolha == 'sobreNos'" #sobreNos>
-    <app-sobre-adote-aqui></app-sobre-adote-aqui>
-  </div>
+  <section class="section-menu">
+    <div *ngIf="escolha == 'home'" #home>
+      <app-home></app-home>
+    </div>
+    <div *ngIf="escolha == 'contato'" #contato>
+      <app-contact-page></app-contact-page>
+    </div>
+    <div *ngIf="escolha == 'doacao'" #doacao>
+      <app-doacao></app-doacao>
+    </div>
+    <div *ngIf="escolha == 'galeria'" #galeria>
+      <app-galeria></app-galeria>
+    </div>
+    <div *ngIf="escolha == 'adocao'" #adocao>
+      <app-adocao></app-adocao>
+    </div>
+    <div *ngIf="escolha == 'sobreNos'" #sobreNos>
+      <app-sobre-adote-aqui></app-sobre-adote-aqui>
+    </div>
+  </section>
 
 </section>

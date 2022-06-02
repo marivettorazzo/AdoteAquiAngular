@@ -3,7 +3,11 @@
   display: flex;
   flex-direction: row;
 }
-
+.section-menu{
+  background-color: #FFFF;
+  width: 78%;
+  margin-left: 15%;
+}
 .contentLogo {
   background-color: rgba(103, 5, 5, 0.847);
 }

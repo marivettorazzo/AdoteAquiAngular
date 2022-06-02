@@ -4,14 +4,13 @@
 }
 
 footer {
-  background: linear-gradient( #ffff ,#7cc51538,#7cc515bc);
+  background: linear-gradient( #ffff ,#7cc51538,#7cc51590);
   background-color: rgba(0, 0, 0, 0.163);
   width: 100% !important;
   display: flex;
   flex-direction: row;
   align-items: baseline;
   justify-content: space-evenly;
-  position: absolute;
   bottom: 0;
 }
 
