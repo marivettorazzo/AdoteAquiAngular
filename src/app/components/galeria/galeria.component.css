@@ -1,16 +1,23 @@
 .section{
-   width: 50%;
+   width: 100%;
    display: flex;
    flex-direction: row;
    justify-content: space-around;
    flex-wrap: wrap;
+   background-image: url("../../../assets/imagens/testeC.png");
 }
 .card{
-  width: 350px !important;
+  width: 250px !important;
   height: auto;
+  font-weight: 500;
+  font-size: x-large;
+  color: #7cc515;
 }
 img{
-  width: 350px !important;
+  width: 100%;
   height: auto;
 
+}
+li{
+  list-style: none;
 }

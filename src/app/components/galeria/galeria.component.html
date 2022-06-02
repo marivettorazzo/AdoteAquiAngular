@@ -1,6 +1,6 @@
 <section class="section">
   <ul *ngFor="let item of dados.Dogs">
-   <div class="card">
+   <div class="card" *ngIf="item.nome !== 'Dulcínio'">
     <li><img class="imgCard"  [src]="item.foto"></li>
     <li>{{item.nome}}</li>
    </div>
